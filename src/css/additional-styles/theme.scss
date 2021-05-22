@@ -1,0 +1,52 @@
+body { font-family: 'Montserrat', sans-serif; }
+:focus,
+button:focus,
+.btn:focus,
+.btn-sm:focus,
+.form-input:focus,
+.form-textarea:focus,
+.form-multiselect:focus,
+.form-select:focus,
+.form-checkbox:focus,
+.form-radio:focus {
+    @apply outline-blue;
+}
+
+.form-input,
+.form-textarea,
+.form-multiselect,
+.form-select,
+.form-checkbox,
+.form-radio {
+
+    &:focus {
+        box-shadow: none !important;
+    }
+}
+
+.image-circle {
+    border-radius: 50%;
+}
+
+
+.address { 
+    max-width: 600px; 
+    word-wrap: normal;
+    text-overflow: ellipsis;  
+}
+
+.description {
+    padding: 10px 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+
+// override when smaller screen
+@media only screen and (max-width: 500px) {
+    .address { 
+        max-width: 300px;
+        word-wrap: normal;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+}
